@@ -1,41 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Put Booking - UpdateBooking</name>
+   <name>GET Booking id</name>
    <tag></tag>
-   <elementGuidId>72882e63-bb0b-4d72-b0ca-ba5c49ed8711</elementGuidId>
+   <elementGuidId>021b661b-0a4b-4bb5-adc3-33de0746be73</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <autoUpdateContent>false</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;firstname\&quot; : \&quot;James\&quot;,\n    \&quot;lastname\&quot; : \&quot;Brown\&quot;,\n    \&quot;totalprice\&quot; : 111,\n    \&quot;depositpaid\&quot; : true,\n    \&quot;bookingdates\&quot; : {\n        \&quot;checkin\&quot; : \&quot;2018-01-01\&quot;,\n        \&quot;checkout\&quot; : \&quot;2019-01-01\&quot;\n    }&quot;,
-  &quot;contentType&quot;: &quot;text/plain&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Accept</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>630ca63e-d353-40ab-b0db-5da2f27dadb1</webElementGuid>
+      <webElementGuid>8a5145aa-94f5-48d6-bbf5-e386de97c7d1</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.3.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${GlobalVariable.url}/booking/1</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${GlobalVariable.url}/booking/133</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
