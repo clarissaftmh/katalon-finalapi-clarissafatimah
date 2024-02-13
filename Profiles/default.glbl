@@ -11,7 +11,37 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'3f707d4521ea6e2'</initValue>
+      <initValue>'0f4aba9cb9045d7'</initValue>
       <name>token</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'clae'</initValue>
+      <name>firstname</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1423'</initValue>
+      <name>bookingid</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'cantik'</initValue>
+      <name>lastname</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'100'</initValue>
+      <name>totalprice</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>true</initValue>
+      <name>depositpaid</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'none'</initValue>
+      <name>additionalneeds</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
