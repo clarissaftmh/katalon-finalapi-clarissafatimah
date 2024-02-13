@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+GET,,,,13-02-2024 16:39:01,13-02-2024 16:39:18,16.680s,PASSED
+,,,,,,,
+Test Cases/GET Booking,,,,13-02-2024 16:39:02,13-02-2024 16:39:14,12.336s,PASSED
+"response = sendRequestAndVerify(findTestObject(""GET Booking""))",,,,13-02-2024 16:39:03,13-02-2024 16:39:12,9.122s,PASSED
+Video,,,,13-02-2024 16:39:14,13-02-2024 16:39:14,0.007s,PASSED
+,,,,,,,
+Test Cases/GET Booking id,,,,13-02-2024 16:39:14,13-02-2024 16:39:18,3.920s,PASSED
+"response = sendRequestAndVerify(findTestObject(""GET Booking id""))",,,,13-02-2024 16:39:14,13-02-2024 16:39:16,1.638s,PASSED
+Video,,,,13-02-2024 16:39:18,13-02-2024 16:39:18,0.003s,PASSED

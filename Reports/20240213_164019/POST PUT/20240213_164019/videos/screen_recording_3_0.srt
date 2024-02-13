@@ -1,0 +1,28 @@
+1
+00:00:00,505 --> 00:00:02,090
+1. responseAuth = sendRequest(findTestObject("POST auth", ["username":"", "password":""]))
+
+2
+00:00:02,093 --> 00:00:02,271
+5. newToken = getElementPropertyValue(responseAuth, "token")
+
+3
+00:00:02,273 --> 00:00:02,280
+9. token = newToken
+
+4
+00:00:02,282 --> 00:00:03,798
+13. responsePostBooking = sendRequest(findTestObject("POST Booking"))
+
+5
+00:00:03,802 --> 00:00:03,964
+17. newBookingID = getElementPropertyValue(responsePostBooking, "bookingid")
+
+6
+00:00:03,966 --> 00:00:03,971
+21. bookingid = newBookingID
+
+7
+00:00:03,972 --> 00:00:05,736
+25. sendRequest(findTestObject("Put Booking", ["bookingid":bookingid]))
+

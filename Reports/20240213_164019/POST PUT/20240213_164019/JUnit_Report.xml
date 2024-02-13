@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="POST PUT" time="24.723" tests="3" failures="0" errors="0">
+   <testsuite name="POST PUT" tests="3" failures="0" errors="0" time="24.723" skipped="0" timestamp="13-02-2024T16:40:27" hostname="ASUS - LAPTOP-86QR281O" id="Test Suites/POST PUT">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\ASUS\\Documents\\Bismillah BFLP IT\\BOOTCAMP IT\\Katalon\\katalon-finalapi-clarissafatimah\\Reports\\20240213_164019\\POST PUT\\20240213_164019"/>
+         <property name="logFiles" value="C:\\Users\\ASUS\\Documents\\Bismillah BFLP IT\\BOOTCAMP IT\\Katalon\\katalon-finalapi-clarissafatimah\\Reports\\20240213_164019\\POST PUT\\20240213_164019\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="ASUS - LAPTOP-86QR281O"/>
+         <property name="hostAddress" value="172.16.213.211"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.3.0.212"/>
+      </properties>
+      <testcase name="Test Cases/POST auth" time="12.383" classname="Test Cases/POST auth" status="PASSED">
+         <system-out><![CDATA[13-02-2024T16:40:27 - [TEST_CASE][PASSED] - Test Cases/POST auth: Test Cases/POST auth
+
+13-02-2024T16:40:28 - [TEST_STEP][PASSED] - sendRequest(findTestObject("POST auth")): Send request successfully
+
+13-02-2024T16:40:35 - [MESSAGE][INFO] - HAR: C:\Users\ASUS\Documents\Bismillah BFLP IT\BOOTCAMP IT\Katalon\katalon-finalapi-clarissafatimah\Reports\20240213_164019\POST PUT\20240213_164019\requests\main\0.har
+
+13-02-2024T16:40:36 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T16:40:36 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST auth")): Send request successfully
+
+13-02-2024T16:40:37 - [MESSAGE][INFO] - HAR: C:\Users\ASUS\Documents\Bismillah BFLP IT\BOOTCAMP IT\Katalon\katalon-finalapi-clarissafatimah\Reports\20240213_164019\POST PUT\20240213_164019\requests\main\1.har
+
+13-02-2024T16:40:37 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T16:40:37 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+13-02-2024T16:40:37 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseText()): null
+
+13-02-2024T16:40:37 - [TEST_STEP][PASSED] - token = token: null
+
+13-02-2024T16:40:37 - [TEST_STEP][PASSED] - token = token: null
+
+13-02-2024T16:40:37 - [TEST_STEP][PASSED] - println(token): null
+
+13-02-2024T16:40:39 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/POST auth' .
+
+13-02-2024T16:40:39 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/POST auth' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/POST Booking" time="3.988" classname="Test Cases/POST Booking" status="PASSED">
+         <system-out><![CDATA[13-02-2024T16:40:39 - [TEST_CASE][PASSED] - Test Cases/POST Booking: Test Cases/POST Booking
+
+13-02-2024T16:40:40 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Booking")): Send request successfully
+
+13-02-2024T16:40:41 - [MESSAGE][INFO] - HAR: C:\Users\ASUS\Documents\Bismillah BFLP IT\BOOTCAMP IT\Katalon\katalon-finalapi-clarissafatimah\Reports\20240213_164019\POST PUT\20240213_164019\requests\main\2.har
+
+13-02-2024T16:40:41 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T16:40:41 - [TEST_STEP][PASSED] - newBookid = getElementPropertyValue(response, "bookingid"): null
+
+13-02-2024T16:40:41 - [TEST_STEP][PASSED] - bookingid = newBookid: null
+
+13-02-2024T16:40:43 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/POST Booking' .
+
+13-02-2024T16:40:43 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/POST Booking' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PUT Booking" time="7.911" classname="Test Cases/PUT Booking" status="PASSED">
+         <system-out><![CDATA[13-02-2024T16:40:43 - [TEST_CASE][PASSED] - Test Cases/PUT Booking: Test Cases/PUT Booking
+
+13-02-2024T16:40:44 - [TEST_STEP][PASSED] - responseAuth = sendRequest(findTestObject("POST auth", ["username":"", "password":""])): Send request successfully
+
+13-02-2024T16:40:46 - [MESSAGE][INFO] - HAR: C:\Users\ASUS\Documents\Bismillah BFLP IT\BOOTCAMP IT\Katalon\katalon-finalapi-clarissafatimah\Reports\20240213_164019\POST PUT\20240213_164019\requests\main\3.har
+
+13-02-2024T16:40:46 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T16:40:46 - [TEST_STEP][PASSED] - newToken = getElementPropertyValue(responseAuth, "token"): null
+
+13-02-2024T16:40:46 - [TEST_STEP][PASSED] - token = newToken: null
+
+13-02-2024T16:40:46 - [TEST_STEP][PASSED] - responsePostBooking = sendRequest(findTestObject("POST Booking")): Send request successfully
+
+13-02-2024T16:40:47 - [MESSAGE][INFO] - HAR: C:\Users\ASUS\Documents\Bismillah BFLP IT\BOOTCAMP IT\Katalon\katalon-finalapi-clarissafatimah\Reports\20240213_164019\POST PUT\20240213_164019\requests\main\4.har
+
+13-02-2024T16:40:47 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T16:40:47 - [TEST_STEP][PASSED] - newBookingID = getElementPropertyValue(responsePostBooking, "bookingid"): null
+
+13-02-2024T16:40:48 - [TEST_STEP][PASSED] - bookingid = newBookingID: null
+
+13-02-2024T16:40:48 - [TEST_STEP][PASSED] - sendRequest(findTestObject("Put Booking", ["bookingid":bookingid])): Send request successfully
+
+13-02-2024T16:40:49 - [MESSAGE][INFO] - HAR: C:\Users\ASUS\Documents\Bismillah BFLP IT\BOOTCAMP IT\Katalon\katalon-finalapi-clarissafatimah\Reports\20240213_164019\POST PUT\20240213_164019\requests\main\5.har
+
+13-02-2024T16:40:49 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T16:40:51 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/PUT Booking' .
+
+13-02-2024T16:40:51 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/PUT Booking' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[13-02-2024T16:40:27 - [TEST_SUITE][PASSED] - POST PUT: Test Cases/PUT Booking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

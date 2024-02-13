@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+POST PUT,,,,13-02-2024 16:40:27,13-02-2024 16:40:51,24.723s,PASSED
+,,,,,,,
+Test Cases/POST auth,,,,13-02-2024 16:40:27,13-02-2024 16:40:39,12.383s,PASSED
+"sendRequest(findTestObject(""POST auth""))",,,,13-02-2024 16:40:28,13-02-2024 16:40:36,7.467s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST auth""))",,Mengirim request autentikasi,,13-02-2024 16:40:36,13-02-2024 16:40:37,1.517s,PASSED
+slurper = new groovy.json.JsonSlurper(),,Ekstraksi token dari response,,13-02-2024 16:40:37,13-02-2024 16:40:37,0.039s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,13-02-2024 16:40:37,13-02-2024 16:40:37,0.068s,PASSED
+token = token,,,,13-02-2024 16:40:37,13-02-2024 16:40:37,0.029s,PASSED
+token = token,,Menyimpan token ke GlobalVariable,,13-02-2024 16:40:37,13-02-2024 16:40:37,0.007s,PASSED
+println(token),,,,13-02-2024 16:40:37,13-02-2024 16:40:37,0.018s,PASSED
+Video,,,,13-02-2024 16:40:39,13-02-2024 16:40:39,0.003s,PASSED
+,,,,,,,
+Test Cases/POST Booking,,,,13-02-2024 16:40:39,13-02-2024 16:40:43,3.988s,PASSED
+"response = sendRequest(findTestObject(""POST Booking""))",,,,13-02-2024 16:40:40,13-02-2024 16:40:41,1.450s,PASSED
+"newBookid = getElementPropertyValue(response, ""bookingid"")",,,,13-02-2024 16:40:41,13-02-2024 16:40:41,0.183s,PASSED
+bookingid = newBookid,,,,13-02-2024 16:40:41,13-02-2024 16:40:41,0.003s,PASSED
+Video,,,,13-02-2024 16:40:43,13-02-2024 16:40:43,0.004s,PASSED
+,,,,,,,
+Test Cases/PUT Booking,,,,13-02-2024 16:40:43,13-02-2024 16:40:51,7.911s,PASSED
+"responseAuth = sendRequest(findTestObject(""POST auth"", [""username"":"""", ""password"":""""]))",,,,13-02-2024 16:40:44,13-02-2024 16:40:46,1.591s,PASSED
+"newToken = getElementPropertyValue(responseAuth, ""token"")",,,,13-02-2024 16:40:46,13-02-2024 16:40:46,0.176s,PASSED
+token = newToken,,,,13-02-2024 16:40:46,13-02-2024 16:40:46,0.008s,PASSED
+"responsePostBooking = sendRequest(findTestObject(""POST Booking""))",,,,13-02-2024 16:40:46,13-02-2024 16:40:47,1.521s,PASSED
+"newBookingID = getElementPropertyValue(responsePostBooking, ""bookingid"")",,,,13-02-2024 16:40:47,13-02-2024 16:40:48,0.160s,PASSED
+bookingid = newBookingID,,,,13-02-2024 16:40:48,13-02-2024 16:40:48,0.005s,PASSED
+"sendRequest(findTestObject(""Put Booking"", [""bookingid"":bookingid]))",,,,13-02-2024 16:40:48,13-02-2024 16:40:49,1.759s,PASSED
+Video,,,,13-02-2024 16:40:51,13-02-2024 16:40:51,0.001s,PASSED

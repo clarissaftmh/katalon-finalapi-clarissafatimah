@@ -1,0 +1,28 @@
+1
+00:00:00,679 --> 00:00:08,163
+1. sendRequest(findTestObject("POST auth"))
+
+2
+00:00:08,180 --> 00:00:09,695
+7. Mengirim request autentikasi
+
+3
+00:00:09,697 --> 00:00:09,736
+13. Ekstraksi token dari response
+
+4
+00:00:09,738 --> 00:00:09,807
+17. result = slurper.parseText(response.getResponseText())
+
+5
+00:00:09,809 --> 00:00:09,835
+21. token = token
+
+6
+00:00:09,837 --> 00:00:09,844
+27. Menyimpan token ke GlobalVariable
+
+7
+00:00:09,846 --> 00:00:09,870
+31. println(token)
+

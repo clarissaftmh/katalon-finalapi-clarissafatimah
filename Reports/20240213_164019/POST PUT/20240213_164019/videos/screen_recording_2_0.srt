@@ -1,0 +1,12 @@
+1
+00:00:00,190 --> 00:00:01,633
+1. response = sendRequest(findTestObject("POST Booking"))
+
+2
+00:00:01,635 --> 00:00:01,820
+5. newBookid = getElementPropertyValue(response, "bookingid")
+
+3
+00:00:01,823 --> 00:00:01,831
+9. bookingid = newBookid
+

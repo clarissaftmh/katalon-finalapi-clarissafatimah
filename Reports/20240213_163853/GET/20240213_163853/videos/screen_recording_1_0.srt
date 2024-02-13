@@ -1,0 +1,12 @@
+1
+00:00:00,665 --> 00:00:09,572
+1. response = sendRequestAndVerify(findTestObject("GET Booking"))
+
+2
+00:00:09,599 --> 00:00:09,627
+1. request = getInstance().getCurrentRequest()
+
+3
+00:00:09,628 --> 00:00:09,826
+5. response = getInstance().getCurrentResponse()
+
