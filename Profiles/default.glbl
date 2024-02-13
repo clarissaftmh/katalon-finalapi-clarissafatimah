@@ -6,7 +6,12 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://restful-booker.herokuapp.com/apidoc/index.html'</initValue>
+      <initValue>'https://restful-booker.herokuapp.com'</initValue>
       <name>url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'f89082783d133dd'</initValue>
+      <name>token</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
